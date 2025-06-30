@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | Hematovision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px #ccc;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #8b0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Hematovision</h1>
+        <p><strong>Hematovision</strong> is an AI-based web application designed to classify blood cell images using deep learning techniques. It helps medical professionals and researchers to detect different types of blood cells efficiently and accurately.</p>
+        
+        <p>This project leverages a pretrained neural network model with transfer learning, providing a user-friendly interface for uploading and predicting cell types.</p>
+        
+        <p>Our goal is to support healthcare diagnostics with smarter tools and assist early disease detection through AI.</p>
+    </div>
+</body>
+</html>

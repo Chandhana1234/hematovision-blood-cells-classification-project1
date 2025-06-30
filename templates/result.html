@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 60px;
+    }
+    .card {
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container text-center">
+    <div class="card mx-auto" style="max-width: 500px;">
+      <h3 class="mb-3">🔬 Prediction Result</h3>
+      <img src="{{ url_for('static', filename='uploads/' + filename) }}" class="img-fluid mb-3" alt="Uploaded Image">
+      <h4 class="text-success">Prediction: {{ result }}</h4>
+      <a href="/" class="btn btn-outline-primary mt-3">🔁 Try Another</a>
+    </div>
+  </div>
+</body>
+</html>
